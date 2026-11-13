@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="turu.css" />
+  </head>
+  <body>
+    <section class="parent">
+      <div id="1" class="bar full"></div>
+      <div id="2" class="bar full"></div>
+      <div id="3" class="bar full"></div>
+      <div id="4" class="bar full"></div>
+    </section>
+    <button class="button is-danger" onclick="attack()">Attack</button>
+    <button class="button is-success" onclick="health()">health</button>
+
+    <div id="bkb" class="bkb">
+      <h1 class="title is-1">name</h1>
+      <div class="control">
+        <input id="input1" class="input input1" type="text" />
+      </div>
+      <h2 class="title is-1">Email</h2>
+      <div class="control">
+        <input id="input2" class="input input1" type="text" />
+      </div>
+      <h3 class="title is-1">Age</h3>
+      <div class="control">
+        <input id="input3" class="input input1" type="text" />
+      </div>
+      <h4 class="title is-1">Class</h4>
+      <div class="control">
+        <input id="input4" class="input input1" type="text" />
+      </div>
+      <button class="button is-primary" onclick="changeTitle()">Submit</button>
+    </div>
+    <div id="hide" class="hide">
+      <div class="title is-1" id="title1">name:</div>
+      <div class="title is-1" id="title2">Email:</div>
+      <div class="title is-1" id="title3">Age:</div>
+      <div class="title is-1" id="title4">Class:</div>
+    </div>
+    <script>
+                    let healthValue = 5;
+
+               const attack = () => {
+               const bar = document.getElementById(healthValue);
+               healthValue = healthValue - 1;
+               bar.classList.remove("full");
+       }const health = () => {
+         const bar = document.getElementById(healthValue);
+          healthValue = healthValue + 1;
+      bar.classList.add("full");
+             }
+       const input2 = document.getElementById("input2");
+           const title2 = document.getElementById("title2");
+                const input3 = document.getElementById("input3");
+            const title3 = document.getElementById("title3");
+          const title4 = document.getElementById("tit                          title.textContent = "name: " + input.value;
+                                     input.value = "";
+                                     title2.textContent = "Email: " + input2.value;
+                                     input2.value = "";
+                                   title3.textContent = "Age: " + input3.value;
+                                     input3.value = "";
+                                     title4.textContent = "Class: " + input4.value;
+                                     input4.value = "";
+
+                                     const hide = document.getElementById("hide");
+                                    hide.classList.remove("hide");
+
+                                     const getaway = document.getElementById("bkb")
+                                     getaway.classList.add("lite")
+                                 }
+                        let grade = Number(prompt("Dun chine hed garsan be?"))
+                        if (grade >= 90)
+                        {
+                            console.log("A+")
+                     }
+                        else if (grade >= 80){
+                        console.log("B")
+                    }
+                    else if (grade >= 70)
+                    {
+                        console.log("C")
+                    }
+                    else {
+                        console.log("D")
+                        alert("Hahahahahah Ulir2")
+                    }
+
+
+               let year = Number(prompt("Jilee oruul1"))
+
+               if (year % 400 === 0) {
+           console.log("Leap year")
+               }
+               else if (year % 100 === 0){
+                   console.log("Not leap year")
+               }
+               else if (year % 4 === 0)
+               {
+                   console.log("Leap year")
+               }
+
+               // 2
+               const age = 18
+               const driverLicence = "true"
+
+               if (age >= 18 && driverLicence)
+               {
+                   console.log("Buy Car")
+               }
+               else {
+                   console.log("Go away")
+               }
+               //1
+               const age2 = 20
+               const ticket = true
+
+               if(age2 >= 18 && ticket)
+               {
+                   console.log("Clubd or")
+               }
+               else {
+                   console.log("Bolohgui")
+               }
+
+               //2
+
+               const isPremium = false
+               const purchaseAmount = 200000
+
+               if(isPremium || purchaseAmount > 100000)
+               {
+                   console.log("Hyamdraltai")
+               }
+               else {
+               console.log("Hyamdralgui Uuchlaarai!!!")
+               }
+
+               //3
+
+               const age3 = 18
+               const hasInternet = true
+
+               if(age3 > 13 && hasInternet)
+               {
+                   console.log("Togloj bolno")
+               }
+               else {
+                   console.log("Togloj Bolohgui")
+               }
+
+               const day = "Saturday"
+               const day2 = "Sunday"
+
+               if(day || day2){
+                   console.log("Amraltiin odor")
+               }
+               else {
+                   console.log("Ajiliin Odor")
+               }
+    </script>
+  </body>
+</html>

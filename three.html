@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section>
+    <div class="life" id="get">
+        <div class="life2" id="get2"></div>
+    </div>
+    <button class="button is-danger" onclick="subtractWidth2()">Attack</button>
+    <button class="button is-success" onclick="healthWidth()">health</button>
+</section>
+<script>
+    const width = document.getElementById("get2");
+    const subtractWidth2 = () => {
+        const currentWidth = width.offsetWidth;
+        const newWidth = currentWidth * 0.9;
+        width.style.width = newWidth + "px";
+        if (newWidth <= 0) {
+            alert("You are dead");
+            width.style.width = "0px";
+        }
+    };
+    const healthWidth = () => {
+        const currentWidth = width.offsetWidth;
+        const newWidth = currentWidth * 1;
+        width.style.width = newWidth + "px";
+        if (newWidth >= 100) {  
+            alert("You are full health");
+            width.style.width = "100px";
+        }
+        document.getElementById("get2").classList.remove("life2");
+    };
+   </script>
+</body>
+</html> 

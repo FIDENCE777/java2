@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1234 -> 4 12->2
+
+        // 1234 / 10 = 123.4
+        // 123.4 / 10 = 12.34
+        // 12.34 / 10 = 1.234
+        // 1.234 / 10 = 0.1234
+        // 4
+
+//     let high = Number(prompt("Too oruulna uu!!!"))
+//         let count = 0
+//     for(let i=0 ; high >=1;i++){
+//         high = high/ 10
+//         count++
+//     }console.log(count)
+
+//     let numbers = [10, 23, 65, 99, 54]
+//     let sum = 0
+//     for (let i = 0; i < numbers.length; i++)
+// {
+//     sum = sum + numbers[i]
+// }
+// console.log(sum)
+
+// let numbers2 = [10, 23, 65, 99, 54]
+// for (let i = 0; i < numbers2.length; i++)
+// if (numbers2[i] % 2 === 0)
+// {
+//     console.log(numbers2[i])
+// }
+
+let numbers3 = [10, 23, 65, 99, 54]
+let max = numbers3[0]
+for (let i = 1; i < numbers3.length; i++)
+
+if (numbers3[i] > max)
+    max = numbers3[i]
+   
+ {console.log(max)} 
+
+ let numbers4 = [10, 23, 65, 99, 99, 99, 66, 17,100]
+ let repeated = numbers4[0]
+ for (let i = 1; i <= numbers4.length; i++)
+ if (numbers4[i] >= repeated)
+ repeated = numbers4[i]
+console.log(repeated)
+
+  let arr = [12, 23, 34, 66, 54, 54, 54, 18];
+      for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++)
+          if (arr[i] === arr[j]) console.log(arr[i]);
+      }
+
+        let arr2 = [12, 23, 34, 66, 54, 54, 54, 18];
+      for (let i = 0; i < arr2.length; i++)
+      
+      {
+          if (arr2[i] === arr2[i - 1]) console.log(arr2[i]);
+      }
+</script>
+</body>
+</html>

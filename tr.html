@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+</head>
+<body>
+  <h1>Sain bna uu</h1>
+  <button class="button is-danger" onclick="nemeh()">+</button>  
+  <button class="button is-success" onclick="hasah()">-</button>
+  <button class="button is-info" onclick="urjver()">*</button>
+  <button class="button is-warning" onclick="huvaah()">/</button>
+  <script>
+    const nemeh = () => {
+        const a = Number(prompt("A-toog oruulna uu?"));
+        const b = Number(prompt("B-toog oruulna uu?"));
+        alert("Niilber: " + (a + b));
+    };
+    const hasah = () => {
+        const a = Number(prompt("A-toog oruulna uu?"));
+        const b = Number(prompt("B-toog oruulna uu?"));
+        alert("Ylgaatai: " + (a - b));
+    };
+    const urjver = () => {
+        const a = Number(prompt("A-toog oruulna uu?"));
+        const b = Number(prompt("B-toog oruulna uu?"));
+        alert("Urjver: " + (a * b));
+    };  
+    const huvaah = () => {
+        const a = Number(prompt("A-toog oruulna uu?"));
+        const b = Number(prompt("B-toog oruulna uu?"));
+        alert("Huvaah: " + (a / b));
+    };
+    </script>
+</body>
+</html> 

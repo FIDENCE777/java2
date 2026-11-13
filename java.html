@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HELLO WORLD</h1>
+    <button onclick="addNumber()">Click me</button>
+    <script>
+   const name = prompt("Tanii ner hen be?");
+   const year = Number(prompt("Heviin onoo oruulna uu?"));
+   const currentYear = 2026;
+   const age = currentYear - year;
+   const tenYearsLater = age + 10;
+   alert("Sain bna uu, " + name + "! Tanii nas " + age + " nastai bna." + " 10 jiliin daraa tanii nas " + tenYearsLater + " nastai bolno."  );
+
+
+   const productsName = prompt("Ta baraa oruulna uu?");
+    const price = Number(prompt("Ta unee oruulna uu?"));
+    const quantity = Number(prompt("Ta too oruulna uu?"));
+    const total = price * quantity;
+    const discountRate = total * 0.1;
+   alert("Tanii baraa: " + productsName + " une: " + price + "too: " + quantity + "niit une: " + total + "Hungulult: " + discountRate);
+
+
+
+   let a = Number(prompt("heden minut"));
+   const hours = (a / 60);
+   const seconds = (a * 60);
+    alert("Tanii oruulsan minut: " + a + " Tsag: " + hours + " Seconds: " + seconds);   
+ const sayHi = () => {
+    console.log("Hi");
+   };
+   sayHi();
+   
+   let c = 0;
+   const addNumber = () => {
+    c = c + 1;
+    console.log(c);
+   };
+   addNumber();
+
+
+    </script>
+</body>
+</html>
