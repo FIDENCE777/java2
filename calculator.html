@@ -3,27 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div id="hariu"></div>
-
-    <button id="plus" onclick="plus()">Nemeh</button>
-    <button>Hasah</button>
-    <button>Urjih</button>
-    <button>Huvaah</button>
-
-    <button id="too" onclick="too(1)">1</button>
-    <button onclick="too(2)">2</button>
-    <button onclick="too(3)">3</button>
-    <button onclick="too(4)">4</button>
-    <button onclick="too(5)">5</button>
-    <button onclick="too(6)">6</button>
-    <button onclick="too(7)">7</button>
-    <button onclick="too(8)">8</button>
-    <button onclick="too(9)">9</button>
-    <button onclick="too(0)">0</button>
-
-    <script src="/main.js"></script>
+    <title>Document</title> src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="calc.css">
+</head>
+    <div class="out">
+      <div class="" id="result"></div>
+      <div>
+        <button onclick="getAction('nemeh')">Nemeh</button>
+        <button onclick="getAction('hasah')">Hasah</button>
+        <button onclick="getAction('urjih')">Urjih</button>
+        <button onclick="getAction('huvaah')">Huvaah</button>
+        </div>
+        <div>
+        <button onclick="showResult()">hariu</button>
+        <button onclick="allclear()">ac</button>
+        <button id="getNumber" onclick="getNumber(1)">1</button>
+        <button onclick="getNumber(2)">2</button>
+        <button onclick="getNumber(3)">3</button>
+        </div>
+        <div>
+        <button onclick="getNumber(4)">4</button>
+        <button onclick="getNumber(5)">5</button>
+        <button onclick="getNumber(6)">6</button>
+        <button onclick="getNumber(7)">7</button>
+        </div>
+        <button onclick="getNumber(8)">8</button>
+        <button onclick="getNumber(9)">9</button>
+        <button onclick="getNumber(0)">0</button>
+      </div>
+      <script src="/main.js"></script>
+    </div>
   </body>
 </html>
